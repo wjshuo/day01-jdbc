@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - @localhost [2]">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="Demo">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="information_schema"/>
+    <schema id="3" name="lanou">
+      <visible>1</visible>
+    </schema>
+    <schema id="4" name="mysql"/>
+    <schema id="5" name="mysqlDay02"/>
+    <schema id="6" name="mysqlDay03"/>
+    <schema id="7" name="mysqlDay04"/>
+    <schema id="8" name="performance_schema"/>
+    <schema id="9" name="sys"/>
+    <schema id="10" name="Test01"/>
+    <table id="11" parent="1" name="emp"/>
+    <table id="12" parent="1" name="stu"/>
+    <table id="13" parent="3" name="DEPT"/>
+    <table id="14" parent="3" name="EMP"/>
+    <table id="15" parent="3" name="salgrade"/>
+    <table id="16" parent="3" name="year"/>
+    <column id="17" parent="11" name="empno">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="18" parent="11" name="ename">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="19" parent="11" name="job">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="20" parent="11" name="mgr">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="21" parent="11" name="hiredate">
+      <data-type>date|0</data-type>
+    </column>
+    <column id="22" parent="11" name="sal">
+      <data-type>decimal(7,2)|0</data-type>
+    </column>
+    <column id="23" parent="11" name="comm">
+      <data-type>decimal(7,2)|0</data-type>
+    </column>
+    <column id="24" parent="11" name="deptno">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="25" parent="12" name="sid">
+      <data-type>char(6)|0</data-type>
+    </column>
+    <column id="26" parent="12" name="sname">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="27" parent="12" name="age">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="28" parent="12" name="gender">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="29" parent="13" name="DEPTNO">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="30" parent="13" name="DNAME">
+      <data-type>varchar(14)|0</data-type>
+    </column>
+    <column id="31" parent="13" name="LOC">
+      <data-type>varchar(13)|0</data-type>
+    </column>
+    <key id="32" parent="13" name="PRIMARY">
+      <columns>DEPTNO</columns>
+      <primary>1</primary>
+    </key>
+    <column id="33" parent="14" name="EMPNO">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="34" parent="14" name="ENAME">
+      <data-type>varchar(10)|0</data-type>
+    </column>
+    <column id="35" parent="14" name="JOB">
+      <data-type>varchar(9)|0</data-type>
+    </column>
+    <column id="36" parent="14" name="MGR">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="37" parent="14" name="HIREDATE">
+      <data-type>date|0</data-type>
+    </column>
+    <column id="38" parent="14" name="SAL">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="39" parent="14" name="COMM">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="40" parent="14" name="DEPTNO">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="41" parent="14" name="PRIMARY">
+      <columns>EMPNO</columns>
+      <primary>1</primary>
+    </key>
+    <column id="42" parent="15" name="grade">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="43" parent="15" name="from">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="44" parent="15" name="to">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="45" parent="16" name="year">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="46" parent="16" name="profit">
+      <data-type>int(11)|0</data-type>
+    </column>
+  </database-model>
+</dataSource>
